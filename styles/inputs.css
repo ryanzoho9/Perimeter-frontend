@@ -1,0 +1,180 @@
+
+
+/* RADIO BUTTON */
+
+.radio {
+display: none
+}
+.radio + label {
+  position: relative;
+  padding-left: 2.2em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  border: .14em solid var(--Grey5);
+  border-radius: 50%;
+  background: var(--Grey2);
+}
+.radio + label:after {
+  content: '';
+  width: .6em;
+  height: .6em;
+  background: var(--SiteBlue);
+  position: absolute;
+  top: .3em;
+  left: .3em;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.radio:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.radio:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+/* CHECKBOX */
+
+.checkbox {
+  display: none
+}
+.checkbox + label {
+  position: relative;
+  padding-left: 2.2em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.2em;
+  height: 1.2em;
+  border: .14em solid var(--gray-60);
+  border-radius: 30%;
+  background: var(--gray-100);
+}
+.checkbox + label:after {
+  content: '';
+  width: .35em;
+  height: .7em;
+  
+  position: absolute;
+  top: .20em;
+  left: .46em;
+  
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: solid #fff;
+  border-width: 0 .15em .15em 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkbox:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+}
+.checkbox:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(45deg);
+  transform: scale(1) rotate(45deg);
+}
+.checkbox:checked + label:before {
+  border: .14em solid #00aaff;
+  background: #00aaff;
+}
+
+
+/* CHECKBOX SLIDE TOGGLES */
+
+.check-toggle {
+  display: none;
+}
+
+.check-toggle + label {
+  display: block;
+  text-align: left !important;
+}
+
+.check-toggle + label span.check-toggle-btn {
+  display: inline-block;
+  position: relative;
+  width: 2.3em;
+  height: 1.2em;
+  float: right;
+  border-radius: .8em;
+  margin-left: .5em;
+  border: .1em solid var(--Grey3);
+  background-color: var(--Grey3);
+  transition: all ease .3s;
+}
+
+.check-toggle + label span.check-toggle-btn:before {
+  content: '';
+  position: absolute;
+  background-color: var(--gray-100);
+  margin-top: 0;
+  margin-left: 0;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: .6em;
+  transition: all ease .3s;
+  box-shadow: 0 .04em .15em rgba(0, 0, 0, .2);
+}
+
+.check-toggle:checked + label span.check-toggle-btn {
+  background-color: var(--SiteBlue);
+  border: .1em solid var(--SiteBlue);
+}
+
+.check-toggle:checked + label span:before {
+  margin-left: 1.1em;
+  background-color: var(--gray-100);
+}
+
+.check-toggle:disabled + label span.check-toggle-btn:before {
+  filter: brightness(92%);
+}
+
+
+/*
+input[type='text'] {
+  background-image: url(https://zohowww.com/perimeter/icons/ui/close-x.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+*/
+
+
+/* TEXT INPUTS */
+.TextBox:focus {}
+.TextBoxShort {}
+.TextBoxLong {}
+
+.width-standard {width: 240px;}
+.width-full {width: 100%;}
+
+.text-input {margin: 6px 0 6px 0; box-sizing: border-box; border: 2px solid var(--gray-70); outline: none; border-radius: 8px; font-size: 16px; background-color: var(--gray-70); padding: 6px 14px 6px 18px; transition: background-color 0.2s ease-in-out; resize: none;}
+.TextBoxInput {width: 240px; margin: 6px 0 6px 0; box-sizing: border-box; border: 2px solid var(--gray-70); outline: none; border-radius: 8px; font-size: 16px; background-color: var(--gray-70); padding: 6px 14px 6px 18px; transition: background-color 0.2s ease-in-out; resize: none;}
+.text-input:focus, .TextBoxInput:focus {background-color: var(--gray-100);}
+.text-input:invalid:not(:focus):not(:placeholder-shown) {border: 2px solid var(--red-warning);}
+::placeholder {opacity: 1;}
+

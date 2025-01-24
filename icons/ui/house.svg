@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.91 99.91">
+    <title>House</title>
+    <rect x="12.96" y="47.91" width="10" height="52" rx="5"/>
+    <rect x="76.96" y="47.91" width="10" height="52" rx="5"/>
+    <rect x="17.96" y="89.91" width="64" height="10"/>
+    <path d="M29.64-11.27h3a0,0,0,0,1,0,0v64a5,5,0,0,1-5,5h0a5,5,0,0,1-5-5v-57A7,7,0,0,1,29.64-11.27Z" transform="translate(27.63 -12.96) rotate(50)"/>
+    <rect x="57.61" y="55.91" width="7" height="44" rx="3.5"/>
+    <rect x="35.3" y="55.91" width="7" height="44" rx="3.5"/>
+    <rect x="35.3" y="55.91" width="29.31" height="7" rx="3.5"/>
+    <path d="M67.36-11.27h3a7,7,0,0,1,7,7v57a5,5,0,0,1-5,5h0a5,5,0,0,1-5-5v-64a0,0,0,0,1,0,0Z" transform="translate(8.01 63.64) rotate(-50)"/>
+</svg>

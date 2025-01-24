@@ -1,0 +1,254 @@
+
+/* styles.css */
+/* zohoury.us */
+
+/* Created by Ryan Zohoury on April 2, 2019. */
+/* Copyright © 2021 Ryan Zohoury. All rights reserved. */
+
+/* Notes */
+
+
+@import url("https://zohowww.com/perimeter/styles/ui.css");
+@import url("https://zohowww.com/perimeter/styles/inputs.css");
+
+
+.img-square-rounded {border-radius: 20%;}
+.img-square-circle {border-radius: 50%;}
+
+.grid {flex-shrink: 0; display: grid; grid-template-columns: auto auto auto; justify-content: space-between; align-content: center;}
+.blur {backdrop-filter: blur(16px) saturate(160%); -webkit-backdrop-filter: blur(16px) saturate(160%);}
+.cursor-pointer {cursor: pointer;}
+.cursor-default {cursor: default;}
+
+
+/* Default */
+* {font-family: var(--primary-fonts); font-weight: 500; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; scroll-behavior: smooth; text-decoration: none; -webkit-tap-highlight: rgba(0,0,0,0); -webkit-touch-callout: none; box-sizing: border-box; border: 0; margin: 0; padding: 0; min-width: 0; outline: none; background: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; opacity: 1;}
+body {width: 100%; min-height: 100vh; color: var(--gray-00); background: var(--gray-100);}
+img {object-fit: cover; height: auto; width: auto;}
+
+/* Default text styles */
+h1, .page-title {font-weight: 600; font-size: 36px; color: var(--gray-00);}
+h2, .section-title {font-weight: 600; font-size: 30px; color: var(--gray-00);}
+h3, .regular-header {font-weight: 500; font-size: 30px; color: var(--gray-00);}
+h4, .small-header-bold {font-weight: 600; font-size: 20px; color: var(--gray-30);}
+h5, .subtitle {font-weight: 500; font-size: 20px; color: var(--gray-30);}
+h6, .body-text-large {font-weight: 500; font-size: 18px; color: var(--gray-00);}
+p, label, .body-text {font-weight: 500; font-size: 16px; color: var(--gray-00);}
+small, .body-text-small {font-weight: 500; font-size: 14px; color: var(--gray-00);}
+a, .button {font-size: 16px; color: var(--text-blue); cursor: pointer}
+
+/* Text modifiers */
+.bold {font-weight: bold;}
+.underline {text-decoration: underline;}
+.italic {font-style: italic;}
+.text-center {text-align: center;}
+.no-copy {-webkit-user-select: none; user-select: none;}
+.link-underline {box-shadow: 0 1px 0 0 currentColor;}
+.elipsis {text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+/* List styles */
+.destyle-list {list-style: none; padding: 0; margin: 0;}
+.list-dash, .list-dash-long, .list-bullet, .list-space {list-style: none; padding: 0 0 0 1.5em; margin: 0;}
+.list-dash li::before {content: "-"; padding-right: .8em; margin-left: -.8em;}
+.list-dash-long li::before {content: "—"; padding-right: .8em; margin-left: -.8em;}
+.list-bullet li::before {content: "•"; padding-right: .8em; margin-left: -.8em;}
+.list-space li::before {content: ""; padding-right: .8em; margin-left: -.8em;}
+
+/* Article styles */
+/*
+.article-style ul {list-style: none; padding: 0 0 0 1.5em; margin: 0;}
+.article-style ul li::before {content: "•"; padding-right: .8em; margin-left: -.8em;}
+.article-style ul ul li::before {content: "-"; padding-right: .8em; margin-left: -.8em;}
+*/
+.article-style img {width: 100%; max-height: 560px; max-width: 800px; height: auto; border-radius: 4px;}
+.article-style p {color: var(--gray-30)}
+.article-style a {color: var(--gray-30); box-shadow: 0 1px 0 0 currentColor; transition: color .2s, box-shadow .2s;}
+.article-style a:hover {color: var(--gray-00); box-shadow: 0 2px 0 0 currentColor;}
+.article-style iframe {}
+.article-style h1, h2 {margin: .5em 0 1.5em 0;}
+.article-style p, h3, h4, h5, h6 {margin-bottom: 1em;}
+.article-style p {line-height: 1.1;}
+
+/* Flex containers */
+.flex, .flex-space-between, .flex-space-around, .flex-space-evenly, .flex-start, .flex-center, .flex-end, .flex-column, .flex-wrap, .flex-align-center {display: flex;}
+.flex-space-between {justify-content: space-between;}
+.flex-space-around {justify-content: space-around;}
+.flex-space-evenly {justify-content: space-evenly;}
+.flex-start {justify-content: flex-start;}
+.flex-center {justify-content: center;}
+.flex-end {justify-content: flex-end;}
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
+.flex-align-center {align-items: center;}
+
+/* Standard margins, paddings, widths,  */
+.content-container {}
+.max-width-500 {width: 100%; max-width: 500px;} /* default for form elements */
+.max-width-600 {width: 100%; max-width: 600px;} /* default */
+.max-width-700 {width: 100%; max-width: 700px;}
+.max-width-800 {width: 100%; max-width: 800px;}
+.max-width-1000 {width: 100%; max-width: 1000px;}
+
+.width-100 {width: 100%;}
+.height-100 {height: 100%;}
+.full-width {width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;}
+
+.margin-auto {display: block; margin-right: auto; margin-left: auto;}
+.content-padding-side {padding-right: 20px; padding-left: 20px;}
+.margin-bottom-20 {margin-bottom: 20px;}
+.margin-bottom-40 {margin-bottom: 40px;}
+.margin-bottom-60 {margin-bottom: 60px;}
+.margin-none {margin: 0;}
+.padding-none {padding: 0;}
+/* Default radius */
+.rounded-s {border-radius: 6px;}
+.rounded-m {border-radius: 8px;}
+.rounded-l {border-radius: 10px;}
+.round {border-radius: 50%;}
+
+/* Visibility */
+.overflow-hidden {overflow: hidden;}
+.display-none {display: none;}
+.opacity-0 {opacity: 0;}
+.hidden {visibility: hidden;}
+
+/* Add padding to line or surronding objects */
+.line-100 {height: 2px; width: 100%; background: var(gray--30)}
+.line-90 {height: 2px; width: 90%;}
+.line-90 {height: 2px; width: 80%;}
+
+/* Page heros */ /* Included in primary style sheet for quicker loads */
+.image-hero {position: relative; height: 60vw; min-height: 420px; max-height: 600px; overflow: hidden;}
+.image-hero-background {width: 100vw; height: 60vw; min-height: 420px; max-height: 600px; object-fit: cover; position: absolute;}
+.image-hero-background-filter {background-color: rgba(255, 255, 255, 0.3);}
+.dark .image-hero-background-filter {background-color: rgba(0, 0, 0, 0.2);}
+.image-hero-contents {width: 100%; height: 100%; position: absolute; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+.image-hero-logo {height: auto; max-width: 400px; min-width: 240px; width: 100%; box-sizing: border-box; padding: 10px 30px 20px 30px; text-shadow: 0 0 2px #888;}
+.heroSubtitle {text-shadow: 0 0 8px #333333; padding: 0 20px 0 20px;}
+
+
+/* Default Color Codes */
+:root {
+--light-blue: rgb(0, 170, 255);
+--ui-blue: rgb(0, 120, 255);
+--text-blue: rgb(0, 96, 255);
+--light-orange: rgb(255, 170, 0);
+--red: rgb(221, 34, 34);
+--red-warning: rgb(255, 80, 48);
+--light-green: rgb(85, 221, 45);
+
+--gray-100: hsl(220, 5%, 100%); /* 220 or 210 hue, possibly less saturation for darker colors */
+--gray-90: hsl(220, 5%, 90%);
+--gray-80: hsl(220, 5%, 80%);
+--gray-70: hsl(220, 5%, 70%);
+--gray-60: hsl(220, 5%, 60%);
+--gray-50: hsl(220, 5%, 50%);
+--gray-40: hsl(220, 5%, 40%);
+--gray-30: hsl(220, 5%, 30%);
+--gray-20: hsl(220, 5%, 20%);
+--gray-10: hsl(220, 5%, 10%);
+--gray-00: hsl(220, 5%, 0%);
+
+/*
+--text-black: hsl(220, 5%, 0%);
+--text-primary: hsl(220, 5%, 10%);
+--text-secondary: hsl(220, 5%, 30%);
+--text-tertiary: hsl(220, 5%, 50%);
+
+--back-white: hsl(220, 5%, 100%);
+--back-primary: hsl(220, 5%, 100%);
+--back-secondary: hsl(220, 5%, 98%);
+--back-tertiary: hsl(220, 5%, 96%);
+*/
+
+--gray-00: #000000;
+--gray-10: #101010;
+--gray-20: #202020;
+--gray-30: #3E3E3E;
+--gray-40: #888888;
+--gray-50: #D4D4D4;
+--gray-60: #DEDEDE;
+--gray-70: #EEEEEE;
+--gray-80: #F4F4F4;
+--gray-90: #FAFAFA;
+--gray-100: #FFFFFF;
+
+--gray-80-a90: rgba(244, 244, 248, 0.90);
+--gray-80-a85: rgba(244, 244, 248, 0.85);
+--gray-80-a80: rgba(244, 244, 248, 0.80);
+--gray-20-a90: rgba(34, 34, 34, 0.90);
+--gray-20-a85: rgba(34, 34, 34, 0.85);
+--gray-20-a80: rgba(34, 34, 34, 0.80);
+}
+
+.dark {
+--ui-blue: #0080FF;
+--text-blue: #0080FF;
+
+--gray-100: #000000;
+--gray-90: #101010;
+--gray-80: #202020;
+--gray-70: #3E3E3E;
+--gray-60: #888888;
+--gray-50: #D4D4D4;
+--gray-40: #DEDEDE;
+--gray-30: #EEEEEE;
+--gray-20: #F4F4F4;
+--gray-10: #FAFAFA;
+--gray-00: #FFFFFF;
+
+--gray-20-a90: rgba(244, 244, 248, 0.90);
+--gray-20-a85: rgba(244, 244, 248, 0.85);
+--gray-20-a80: rgba(244, 244, 248, 0.80);
+--gray-80-a90: rgba(34, 34, 34, 0.90);
+--gray-80-a85: rgba(34, 34, 34, 0.85);
+--gray-80-a80: rgba(34, 34, 34, 0.80);
+}
+
+/* Default Color Classes */
+/*
+.Orange {color: var(--Orange)}
+.Blue {color: var(--Blue)}
+.SiteBlue {color: var(--SiteBlue)}
+.TextBlue {color: var(--TextBlue)}
+.gray-0 {color: var(--gray-00)}
+.gray-1 {color: var(--gray-10)}
+.gray-2 {color: var(--gray-20)}
+.gray-3 {color: var(--gray-30)}
+.gray-4 {color: var(--gray-40)}
+.gray-5 {color: var(--gray-50)}
+.gray-6 {color: var(--gray-60)}
+.gray-7 {color: var(--gray-70)}
+.gray-8 {color: var(--gray-80)}
+.gray-9 {color: var(--gray-90)}
+.gray-10 {color: var(--gray-100)}
+.BackOrange {background: var(--Orange)}
+.BackBlue {background: var(--Blue)}
+.BackSiteBlue {background: var(--SiteBlue)}
+.BackTextBlue {background: var(--TextBlue)}
+.Backgray-0 {background: var(--gray-00)}
+.Backgray-1 {background: var(--gray-10)}
+.Backgray-2 {background: var(--gray-20)}
+.Backgray-3 {background: var(--gray-30)}
+.Backgray-4 {background: var(--gray-40)}
+.Backgray-5 {background: var(--gray-50)}
+.Backgray-6 {background: var(--gray-60)}
+.Backgray-7 {background: var(--gray-70)}
+.Backgray-8 {background: var(--gray-80)}
+.Backgray-9 {background: var(--gray-90)}
+.Backgray-10 {background: var(--gray-100)}
+*/
+
+.dark .dark-invert {filter: invert(1);}
+
+
+/* Import all fonts */
+:root {
+  --primary-fonts: 'Avenir Next', 'AN', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --default-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {font-family: AN; font-weight: 400; src: url(https://zohowww.com/perimeter/fonts/AN/AvenirNext-Regular.woff)}
+@font-face {font-family: AN; font-weight: 500; src: url(https://zohowww.com/perimeter/fonts/AN/AvenirNext-Medium.woff)}
+@font-face {font-family: AN; font-weight: 600; src: url(https://zohowww.com/perimeter/fonts/AN/AvenirNext-DemiBold.woff)}
+@font-face {font-family: AN; font-weight: 700; src: url(https://zohowww.com/perimeter/fonts/AN/AvenirNext-Bold.woff)}

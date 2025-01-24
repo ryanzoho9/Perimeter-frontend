@@ -1,0 +1,141 @@
+
+@import url("https://zohowww.com/perimeter/styles/styles.css");
+
+/* Modal */
+.pModalContainer {position: fixed; z-index: 9999999999; height: 100vh; width: 100vw; top: 0; right: 0; bottom: 0; left: 0; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.3); opacity: 0; transition: opacity .5s;}
+.Dark .pModalContainer {background-color: rgba(255, 255, 255, 0.15)}
+.pModal {min-height: 300px; width: 400px; max-height: 380px; position: relative; padding: 48px 10px 28px 10px; margin: 18px 16px 60px 16px; box-sizing: border-box; display: flex; justify-content: space-between; flex-direction: column;border-radius: 12px;}
+.pModalText {padding: 0 20px 16px 20px;}
+.pModalTitle {margin-bottom: 20px;}
+.pModalDescription {}
+.pModalButtonContainer {width: 100%; display: flex; justify-content: space-evenly;}
+.pShowModal {opacity: 1;}
+.pModalCloseX {padding: 18px; margin: 0 6px 0 0; position: absolute; right: 0; top: 0}
+.pModalCloseXIcon {height: 18px; width: 18px;}
+
+
+/* Footer */
+.pFooter {padding: 30px 16px 30px 16px; margin-top: 100px; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; background: var(--gray-80);}
+.FooterLink {margin-bottom: 3px; cursor: pointer;}
+.pFooterSocialContainer {width: 100%; margin-top: 8px; display: flex; justify-content: center;}
+.pFooterSocial {padding: 8px; margin: 2px 6px 2px 6px;}
+.pFooterSocialIcon {height: 32px; width: 32px;}
+
+
+/* Tab bar */
+
+
+
+/* Section tabs */
+
+
+
+
+/* Side bar */
+
+
+/* Navigation */
+.NavContainer {min-height: 52px; position: fixed; top: 0; right: 0; left: 0; width: 100%; z-index: 1001; -webkit-transition: background-color .6s; transition: background-color .6s, backdrop-filter .6s, -webkit-backdrop-filter .6s, box-shadow .6s;}
+.NavSpace {-webkit-animation-delay: .6s; animation-delay: .6s; -webkit-transition: height .6s; transition: height .6s;}
+.NavContainerBackground {border-bottom: 1px solid transparant;}
+.NavListContainer {margin: 0; list-style: none;}
+.NavListInner {margin: 0; list-style: none;}
+.NavItem {display: inline-block; width: 100%}
+
+/* Mobile Navigation */
+@media only screen and (max-width: 600px) {
+.NavContainerBackground {background-color: var(--GreyAlpha1); -webkit-backdrop-filter: blur(16px) saturate(160%); backdrop-filter: blur(16px) saturate(160%); box-shadow: 0 0px 0px 1px var(--Grey4) /* 0 0px 20px -2px rgba(0,0,0,0.3) */;}
+.NavListContainer {padding: 0;}
+.NavListMobile {display: flex; justify-content: space-between; height: 52px; align-items: center; margin: 0 18px 0 18px}
+.NavListInner {padding: 40px 26px 24px 26px; display: none;}
+.NavItem {padding: 12px 0 12px 0;}
+.NavListItem::before {content: ''; display: block; width:100%; height: 1px; background-color: var(--Grey6);}
+.NavLogo {-webkit-transition: opacity .6s; transition: opacity .6s; opacity: 0; display: block;}
+.NavLogoShow {opacity: 1 !important;}
+.desktopSecondIcon {}
+.mobileSecondIcon { }
+.hamburger {display: inline-block;}
+.NavSpace {height: 0;}
+.NavLogoImg {height: 32px; width: auto; padding: 8px;  display: block;}
+.SecondIconImg {height: 26px; width: 26px; padding: 8px;  display: block;}
+.navMobileBuffer {height: 52px;}
+.navDesktopLogo {display: none}
+.navDesktopSecondIcon {display: none}
+}
+
+/* Desktop Navigation */
+@media only screen and (min-width: 601px) {
+.NavContainer {background-color: var(--GreyAlpha1); -webkit-backdrop-filter: blur(16px) saturate(160%); backdrop-filter: blur(16px) saturate(160%);}
+.NavListContainer {height: 52px; padding: 0 14px 0 14px; display: flex; justify-content: center; align-items: center;}
+.NavListMobile {display: none;}
+.NavListInner {padding: 0 8px 0 8px; display: flex; justify-content: space-around; max-width: 700px; width: 100%; overflow-x: scroll;}
+.NavListInner::-webkit-scrollbar {height: 0px;}
+.NavListItem {display: inline-block; white-space: nowrap;}
+.NavItem {padding: 8px 12px 8px 12px;}
+.NavLogo {padding: 8px 10px 8px 8px; display: block;}
+.desktopSecondIcon {padding: 8px 8px 8px 10px; display: block;}
+.mobileSecondIcon {width: 60px; display: none}
+.hamburger {display: none;}
+.NavSpace {height: 0;}
+.NavLogoImg {height: 32px; width: 32px; display: block;}
+.SecondIconImg {height: 26px; width: 26px; display: block;}
+.navDesktopBuffer {height: 52px;}
+}
+
+
+
+.pHamburgerContainer {
+  padding: 8px 6px 8px 6px;
+  cursor: pointer;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  width: 34px;
+  height: 18px;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+}
+.pHamburger, .pHamburger::before, .pHamburger::after {
+  width: 34px;
+  height: 2px;
+  background-color: var(--Grey10);
+  border-radius: 1px;
+  position: absolute;
+}
+.pHamburger {
+  transition: transform .2s ease, top .2s .2s, background-color 0s .2s;
+  display: block;
+  top: auto;
+  bottom: 8px; /* change with padding */
+}
+.pHamburger::before, .pHamburger::after {
+  transition: transform .2s ease, top .2s .2s, bottom .2s .2s;
+  content: "";
+  display: block;
+}
+.pHamburger::after {
+  bottom: 16px;
+}
+.pHamburger::before {
+  top: -8px;
+}
+
+.pHamburgerOpen .pHamburger::after, .pHamburgerOpen .pHamburger::before {
+  transition: transform .2s .2s ease, top .2s, bottom .2s;
+}
+.pHamburgerOpen .pHamburger::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.pHamburgerOpen .pHamburger::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.pHamburgerOpen .pHamburger {
+  transition: transform .2s .2s ease, top .2s, background-color 0s .2s;
+  transform: translate3d(0, -8px, 0);
+  background-color: transparant;
+}
