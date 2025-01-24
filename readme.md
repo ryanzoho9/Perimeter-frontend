@@ -1,5 +1,5 @@
 # Perimeter Usage Guide
-Perimeter is a web framework developed by Ryan Zohoury. Perimeter is dependent on jQuery and may contain items or files created by external individuals/companies who possess/maintain the rights to those files exclusively. Perimeter is not openly licensed at this time and may not be used without express written permission from Ryan Zohoury.
+Perimeter is a web framework developed by Ryan Zohoury. Perimeter is currently dependent on jQuery but its usage will be phased out.
 ## Structure
 Perimeter can be used to style and develop web sites and web apps. It contains a primary style sheet which contains basic styles and links to secondary style sheets. In addition to styling your website, Perimeter also uses JavaScript to configure various aspects of the website based on your configuration parameters. in the perimeter file there are four sub-directories which include styles, scripts, icons, and fonts.
 
